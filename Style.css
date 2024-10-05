@@ -1,0 +1,61 @@
+body {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(254, 243, 226);
+}
+
+header {
+    color: rgb(255, 255, 255);
+    background: rgb(112, 136, 113);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: rgb(190, 198, 160);
+}
+
+.biography, .hobbies, .facts {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgb(96, 102, 118);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, tr {
+    border: 1px solid rgb(112, 136, 113);
+    padding: 20px;
+}
+
+th {
+    background-color: rgb(112, 136, 113);
+    color: rgb(190, 198, 160);
+}
+
+footer {
+    background: rgb(112, 136, 113);
+    color: rgb(190, 198, 160);
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Image styling for hobbies */
+.hobbies img {
+    width: 100px;  /* Adjusted size for images */
+    height: auto;  /* Maintain aspect ratio */
+    transition: transform 0.3s ease; 
+}
+
+.hobbies img:hover {
+    transform: scale(1.1); /* Image scales on hover */
+}
