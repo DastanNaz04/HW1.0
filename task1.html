@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сайт</title>
+    <style>
+        
+        body {
+           line-height: 1.6;
+           margin: 0;
+           padding: 0;
+           font-family: 'Arial', sans-serif;
+           background-color: rgb(254, 243, 226); 
+        }
+
+       
+        header {
+           background: rgb(112, 136, 113);
+           color: rgb(254, 243, 226); 
+           padding: 20px;
+           text-align: center;
+        }
+        h1 {
+           margin: 0;
+        }
+        h2::before {
+            content: "★ "; 
+            color: rgb(190, 198, 160); 
+        }
+
+       
+        img {
+            width: 150px;
+            height: 90px;
+            transition: transform 0.3s ease; 
+        }
+        img:hover {
+            transform: scale(1.1); 
+        }
+
+        
+        .biography, .hobbies, .facts {
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background: rgb(96, 102, 118); 
+            color: rgb(254, 243, 226);
+        }
+
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid rgb(112, 136, 113); 
+            padding: 20px;
+        }
+        th {
+            background-color: rgb(112, 136, 113);
+            color: rgb(254, 243, 226); 
+        }
+
+        
+        footer {
+            background: rgb(112, 136, 113); 
+            color: rgb(254, 243, 226); 
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: rgb(190, 198, 160); 
+            color: rgb(96, 102, 118); 
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        footer a:hover {
+            background-color: rgb(112, 136, 113); 
+            color: rgb(254, 243, 226); 
+        }
+
+        
+        @media (max-width: 768px) {
+            body {
+                font-size: 0.9em;
+            }
+
+            .hobbies ul {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .biography, .hobbies, .facts {
+                padding: 10px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+       
+        .hobbies ul {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center; 
+        }
+        .hobbies li {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Назаров Дастан</h1>
+        <p>Начинающий Программист</p>
+    </header>
+    
+    <section class="biography">
+        <h2>Обо мне</h2>
+        <p>Мне 19 лет, обучаюсь на факультете информационных технологий. По професий IT-менеджмент.</p>
+    </section>
+    
+    <section class="hobbies">
+        <h2>Мои хобби</h2>
+        <ul>
+            <li>Баскетбол</li>
+            <img src="./basketball.png" alt="Basketball">
+            <li>Кататься на велосипеде</li>
+            <img src="./bike.png" alt="Bike">
+            <li>Хожу в горы</li>
+            <img src="./mountain.png" alt="Mountain">
+        </ul>
+    </section>
+    
+    <section class="facts">
+        <h2>Интересные факты</h2>
+        <table>
+            <tr>
+                <th>Факты</th>
+                <th>Информация</th>
+            </tr>
+            <tr>
+                <td>Факт 1</td>
+                <td>Люблю слушать музыку</td>
+            </tr>
+            <tr>
+                <td>Факт 2</td>
+                <td>Побывал в 4 странах</td>
+            </tr>
+            <tr>
+                <td>Факт 3</td>
+                <td>Коллекционирую кроссовки</td>
+            </tr>
+        </table>
+    </section>
+    
+    <footer>
+        <p>Свяжитесь со мной: <a href="mailto:d_nazarov@kbtu.kz">d_nazarov@kbtu.kz</a></p>
+        <p>Следите за мной в социальных сетях: <a href="https://www.instagram.com/n__dastan/">Instagram</a></p>
+    </footer>
+</body>
+</html>
